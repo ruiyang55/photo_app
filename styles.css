@@ -1,0 +1,261 @@
+html {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+body #navigationBar {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  width: 100%;
+}
+
+body #navigationBar #logo, body #navigationBar #account {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+body #navigationBar #logo {
+  float: left;
+  margin: 20px 0px 20px 20px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+}
+
+body #navigationBar #account {
+  float: right;
+  margin: auto;
+  margin: 20px 20px 20px 0px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+body #navigationBar #account button {
+  color: #5078b8;
+}
+
+body #navigationBar #account #name {
+  font-family: 'Comfortaa', cursive;
+}
+
+body #navigationBar #account #name, body #navigationBar #account #log {
+  float: left;
+  margin: 0 10px;
+}
+
+body #recommendation {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  width: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+  body #recommendation {
+    display: none;
+  }
+}
+
+body #recommendation #currentUser, body #recommendation #suggestions {
+  margin: 20px 20px 0px 20px;
+}
+
+body #recommendation #currentUser img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+body #recommendation #currentUser img, body #recommendation #currentUser p {
+  display: inline-block;
+}
+
+body #recommendation #currentUser p {
+  position: relative;
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
+  bottom: 39px;
+  margin-left: 20px;
+}
+
+body #recommendation #suggestions #des {
+  font-weight: bold;
+  color: #7e7e7e;
+}
+
+body #recommendation #suggestions .card {
+  margin: 10px 0 0 0;
+}
+
+body #recommendation #suggestions .card img, body #recommendation #suggestions .card div, body #recommendation #suggestions .card button {
+  display: inline-block;
+}
+
+body #recommendation #suggestions .card img {
+  height: 50px;
+  margin: 10px 20px 0 0;
+  border-radius: 50%;
+}
+
+body #recommendation #suggestions .card div {
+  width: 50%;
+  position: relative;
+  bottom: 10px;
+}
+
+body #recommendation #suggestions .card div p {
+  margin: 0;
+}
+
+body #recommendation #suggestions .card div p:nth-child(1) {
+  font-weight: bold;
+}
+
+body #recommendation #suggestions .card div p:nth-child(2) {
+  color: #7e7e7e;
+}
+
+body #recommendation #suggestions .card button {
+  width: 15%;
+  position: relative;
+  bottom: 20px;
+  color: #5078b8;
+}
+
+body #stories {
+  margin: 100px 150px 0 150px;
+  background-color: #fff;
+  width: 700px;
+}
+
+@media screen and (max-width: 1000px) {
+  body #stories {
+    width: calc(100% - 20px);
+    margin: 100px 10px 0 10px;
+  }
+}
+
+body #stories .card {
+  display: inline-block;
+  width: 80px;
+  overflow: hidden;
+  margin: 20px 5px;
+}
+
+body #stories .card img, body #stories .card p {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body #stories .card img {
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 0px 15px 15px;
+}
+
+body #posts {
+  width: 700px;
+  margin: 30px 150px 0 150px;
+}
+
+@media screen and (max-width: 1000px) {
+  body #posts {
+    width: calc(100% - 20px);
+    margin: 30px 10px 0 10px;
+  }
+}
+
+body #posts .card .time {
+  color: #7e7e7e;
+}
+
+body #posts .card {
+  background-color: #fff;
+  margin: 50px 0 0 0;
+  border: #c0c0c0 solid 1px;
+}
+
+body #posts .card .title {
+  color: #7e7e7e;
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
+}
+
+body #posts .card .title img {
+  height: 40px;
+  position: relative;
+  top: 10px;
+}
+
+body #posts .card .title, body #posts .card .react, body #posts .card .comments, body #posts .card .time, body #posts .card .comment {
+  margin: 20px;
+}
+
+body #posts .card .title span:nth-child(1), body #posts .card .react span:nth-child(1), body #posts .card .comments span:nth-child(1), body #posts .card .time span:nth-child(1), body #posts .card .comment span:nth-child(1) {
+  font-weight: bold;
+}
+
+body #posts .card .title span:nth-child(3), body #posts .card .react span:nth-child(3), body #posts .card .comments span:nth-child(3), body #posts .card .time span:nth-child(3), body #posts .card .comment span:nth-child(3) {
+  color: #5078b8;
+}
+
+body #posts .card .picture {
+  width: 100%;
+}
+
+body #posts .card .title img, body #posts .card .react img, body #posts .card .comment img {
+  height: 30px;
+}
+
+body #posts .card .more, body #posts .card .save, body #posts .card .comment button {
+  float: right;
+}
+
+body #posts .card .comment {
+  margin: 0;
+  border-top: #c0c0c0 solid 1px;
+}
+
+body #posts .card .comment input {
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+body #posts .card .comment button {
+  color: #5078b8;
+  font-weight: bold;
+}
+
+body #posts .card .comment img, body #posts .card .comment input, body #posts .card .comment button {
+  height: 30px;
+  padding: 0;
+  vertical-align: middle;
+  margin: 20px;
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #recommendation {
+    display: none;
+  }
+  #stories .cards {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
